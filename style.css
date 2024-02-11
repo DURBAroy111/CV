@@ -1,20 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
+/* this is Universal  */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-} 
+}
 
 :root{
     --primary-color:  #1646d7;
+    --text-color : #000000;
+
 }
+
 html{
     font-size: 10px;
 }
+
 body{
     font-family: Roboto, 'Times New Roman';
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);    
 }
+
+/* common styles */
 img{
     width: 100%;
 }
@@ -23,12 +32,12 @@ a{
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
-.profile_description{    
+.Profiledescription{    
     font-size: 1.5rem;
-    font-weight: 400; 
+    font-weight: 400;
     color: var(--text-color);
     margin-top: .5rem;
-
+    
 }
 .title{
     color: var(--primary-color);
@@ -55,13 +64,6 @@ a{
     color: var(--text-color);
     font-weight: 400; 
 }
-/* eduItem
-preItem
-itemTitle
-itemSubtitle */
-
-
-/* layouts */
 
 /* layouts */
 .container{
@@ -72,9 +74,11 @@ itemSubtitle */
     padding: 5rem;
     background: #ffffff;
     grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    gap: 4rm;
 }
-
+.ProfileImg img{
+    border-radius: 100%;
+}
 @media only screen and (max-width:768px) {
     .container{
         width: 100%;
@@ -91,15 +95,17 @@ itemSubtitle */
 
 }
 
-/*.group1 , .group2{
+.group1 , .group2{
     display: flex;
     gap: 5rem;
     flex-direction: column;
     margin-bottom: 5rem;
 }
+
 .group3{
     max-width: 700px;
     width: 100%;
+
     margin: 5 auto;
     grid-column: 1/-1;
     display: flex;
@@ -107,9 +113,13 @@ itemSubtitle */
     gap: 5rem;
     margin-top: 5rem;
 }
+
 .group3 > div{
     flex: 1;
 }
+
+
+
 /* Profile */
 .profile_container{
     display : flex;
@@ -120,19 +130,26 @@ itemSubtitle */
     max-width: 250px;    
 }
 
-.profile_name{
+.profiletitle{
     color: var(--primary-color);
-    font-weight: 500;
+    font-weight: 700;
     font-size: clamp(2.5rem,15vw,7rem);
     text-transform: uppercase;
     display: block;
     margin-bottom: -1rem;    
 }
 
-
+.profilename{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: clamp(2rem,8vw,4rem);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 0.8rem;    
+}
 
 .profiletitle{
-
+    
     font-size: 1.5rem;
     font-weight: 400;
     text-transform: uppercase;
@@ -163,9 +180,10 @@ itemSubtitle */
 }
 
 /* Expertise  */
-/*.skills_title{
+.skills_title{
     margin-bottom: 1rem;
 }
+
 .skills_list{
     margin-top: 1rem;
     margin-left: 2rem;
@@ -179,21 +197,27 @@ itemSubtitle */
     font-weight: 700;
     margin-top: 2rem;
 }
+
 .eduItem{
     margin-top: 2rem;
+
 }
+
 /* Certifications */
-/*.certificationItem{
+.certificationItem{
     margin-top: 2rem;
 }
+
 /* Expriences */
 
-/*.expItem{
+.expItem{
     margin-top: 2rem;
 }
+
 .awardsItem{
     margin-top: 2rem;
 }
+
 .interestItems{
     margin-top: 2rem;
     display: flex;
@@ -201,6 +225,7 @@ itemSubtitle */
     flex-wrap: wrap;
     gap: 2rem;
 }
+
 .interestItem{
     font-size: 1.5rem;
     display: flex;
@@ -209,18 +234,22 @@ itemSubtitle */
     justify-content: center;
     gap: .5rem;
     color: var(--text-color);    
+
 }
+
 .interestItems svg{
     width: 2rem;
 }
+
 /* Socials */
-/*.socials{
+.socials{
     /* margin-left: 15rem; */
-/*}
+}
 .socialItems{
     margin-top: 2rem;
     
 }
+
 .socialItem{
     margin-top: 1.5rem;
     font-size: 1.5rem;
@@ -229,13 +258,17 @@ itemSubtitle */
     align-items: center;
     justify-content: flex-start;
     color: var(--text-color);
+
 }
+
 .socialItem:hover{
     color: #ff7613;
 }
+
 .socialItem svg{
     width: 2rem;    
 }
+
 hr{
     margin-bottom: 5rem;     
     margin-top: 1rem;   
@@ -245,15 +278,18 @@ hr{
     border: none;
     border-top: 2px solid grey;
 }
+
 .C_item{
     font-size: 1.6rem;
     color: black;
     font-weight: 700;
     margin: 0.8rem 0;
 }
+
 .C_item:hover{
     color: var(--primary-color);
 }
+
 .Project{
     
-}*/
+}
